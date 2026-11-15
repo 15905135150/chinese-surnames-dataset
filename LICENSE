@@ -1,0 +1,57 @@
+Chinese Surnames Open Dataset
+Copyright (c) 2026 Chinese Naming (https://naming-cn.pages.dev)
+
+This dataset — everything in data/, the record descriptions in schema.json, and the
+explanatory text of this repository — is licensed under the Creative Commons
+Attribution 4.0 International Licence (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+
+  Share  — copy and redistribute the material in any medium or format
+  Adapt  — remix, transform, and build upon the material for any purpose,
+           even commercially
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the licence,
+                and indicate if changes were made. You may do so in any reasonable
+                manner, but not in any way that suggests the licensor endorses you
+                or your use.
+
+  No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the licence permits.
+
+The licensor cannot revoke these freedoms as long as you follow the licence terms.
+
+-------------------------------------------------------------------------------
+Suggested attribution
+
+In a README or about page, one line is enough:
+
+    Surname data from Chinese Naming — https://naming-cn.pages.dev/opendata (CC BY 4.0)
+
+In an academic reference:
+
+    Chinese Naming (2026). Chinese Surnames Open Dataset, v2.0.
+    https://naming-cn.pages.dev/en/chinese-surnames-dataset (CC BY 4.0)
+
+If you modified the data, please say so, e.g. "modified from ...".
+
+-------------------------------------------------------------------------------
+Scope and caveats
+
+The licence covers the compilation and the prose written for it. Population ranks
+and sizes derive from the Ministry of Public Security's 2020 national name report;
+commanderies from Tang and Song surname books; hall names from clan genealogies and
+ancestral halls. Those upstream facts are not the licensor's to license — the CC BY
+4.0 grant applies to this compilation of them, and users should cite the primary
+sources for the underlying figures.
+
+Fields that are empty or null mean unknown, not zero. In particular only 30 of the
+109 records carry an official national population rank, because the source publishes
+ranks for the top 100 surnames only.
+
+The full legal code of CC BY 4.0 is available at the URL above and is the
+authoritative text; this file is a summary for convenience.

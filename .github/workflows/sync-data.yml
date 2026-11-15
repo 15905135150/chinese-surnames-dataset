@@ -1,0 +1,39 @@
+name: Sync dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * 1" # Mondays 03:00 UTC
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync.py"
+      - ".github/workflows/sync-data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download and validate
+        run: python scripts/sync.py
+
+      - name: Commit if the upstream changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "chore: sync dataset from naming-cn.pages.dev"
+            git push
+          else
+            echo "Dataset unchanged upstream; nothing to commit."
+          fi

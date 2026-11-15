@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://naming-cn.pages.dev/schema/surname-record.json",
+  "title": "Chinese surname record",
+  "description": "One record of the Chinese Surnames Open Dataset (CC BY 4.0). Field names are English; free-text values are Chinese. Empty string and null both mean unknown — never zero.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "surname",
+    "slug",
+    "pinyin",
+    "era",
+    "ancestor",
+    "origin",
+    "junwang",
+    "tanghao",
+    "rank",
+    "rank_num",
+    "population",
+    "population_est",
+    "notables",
+    "origin_note",
+    "url"
+  ],
+  "properties": {
+    "surname": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2,
+      "description": "The surname in Chinese characters: one character, or two for a compound surname such as 欧阳.",
+      "examples": ["李", "王", "欧阳"]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z]+[1-5]$",
+      "description": "Tone-numbered pinyin, used as the site URL key. Also a tone-free join key: prefix-matching /^li/ catches li3, liang2, liao4, lin2, liu2.",
+      "examples": ["li3", "ouyang2", "moqi2"]
+    },
+    "pinyin": {
+      "type": "string",
+      "description": "Mandarin reading with tone marks.",
+      "examples": ["lǐ", "ōu yáng"]
+    },
+    "era": {
+      "type": "string",
+      "description": "Period in which the surname mainly took shape.",
+      "examples": ["商末", "西周", "春秋", "战国", "北魏"]
+    },
+    "ancestor": {
+      "type": "string",
+      "description": "Founding ancestor as recorded in the histories. Where the sources disagree, both readings are kept, separated by 、 — this is not a typo.",
+      "examples": ["李利贞（血缘始祖皋陶）", "白公胜、公子白"]
+    },
+    "origin": {
+      "type": "string",
+      "description": "Place of origin, given as a modern administrative location for join-ability.",
+      "examples": ["河南鹿邑"]
+    },
+    "junwang": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Commanderies (郡望): regions where a branch of the clan rose to prominence. Lists the most frequently cited ones, not all.",
+      "examples": [["陇西", "赵郡"]]
+    },
+    "tanghao": {
+      "type": "array",
+      "description": "Hall names (堂号) with their derivations. In the CSV this is flattened to names only, joined by |.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "note"],
+        "properties": {
+          "name": { "type": "string", "examples": ["陇西堂"] },
+          "note": { "type": "string", "description": "How the hall name arose, in Chinese." }
+        }
+      }
+    },
+    "rank": {
+      "type": "string",
+      "description": "National population rank as a display string, per the 2020 Ministry of Public Security national name report. Empty string when no official rank exists. Kept so the data matches what readers see on the site; use rank_num for sorting.",
+      "examples": ["全国第 2 位", ""]
+    },
+    "rank_num": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "The same rank as a number. null when unknown — never 0.",
+      "examples": [2, null]
+    },
+    "population": {
+      "type": "string",
+      "description": "Population estimate as published. \"人数稀少\" means the surname is recorded as rare with no figure; empty string means unknown.",
+      "examples": ["约 1.01 亿人", "111.2 万人", "人数稀少", ""]
+    },
+    "population_est": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Population estimate in persons. null for both \"人数稀少\" and unknown — never filled with 0.",
+      "examples": [101000000, 1112000, null]
+    },
+    "notables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Historical bearers of the surname.",
+      "examples": [["李耳（老子）", "李广", "李世民", "李白", "李时珍"]]
+    },
+    "origin_note": {
+      "type": "string",
+      "description": "Prose account of how the surname came to exist, in Chinese. States competing branches in parallel instead of forcing a single root.",
+      "examples": ["嬴姓。舜时皋陶任大理（掌刑狱），子孙以官为氏称「理」。……遂改「理」为「李」。"]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Full detail page for that surname on the site.",
+      "examples": ["https://naming-cn.pages.dev/xing/li3"]
+    }
+  }
+}
