@@ -18,6 +18,7 @@
     "rank_num",
     "population",
     "population_est",
+    "population_source",
     "notables",
     "origin_note",
     "url"
@@ -96,6 +97,12 @@
       "minimum": 0,
       "description": "Population estimate in persons. null for both \"人数稀少\" and unknown — never filled with 0.",
       "examples": [101000000, 1112000, null]
+    },
+    "population_source": {
+      "type": "string",
+      "enum": ["mps2020", "estimate", "qualitative", ""],
+      "description": "Provenance of population/population_est. mps2020 = figure printed verbatim in the 2020 MPS name report's compound-surname section (欧阳 111.2万, 令狐 5.5万 …); that report's top-100 table lists ranks but no headcounts, so no single-character surname carries this value. estimate = some other statistic or estimate, of varying vintage — not official. qualitative = only the remark 人数稀少, no figure. Empty = no data. Sort on rank_num, never on population_est: the two columns are not from the same survey and adjacent inversions exist.",
+      "examples": ["mps2020", "estimate", "qualitative", ""]
     },
     "notables": {
       "type": "array",

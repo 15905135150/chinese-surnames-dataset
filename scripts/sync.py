@@ -33,16 +33,19 @@ FIELDS = [
     "rank_num",
     "population",
     "population_est",
+    "population_source",
     "notables",
     "origin_note",
     "url",
 ]
 
+SOURCES = {"mps2020", "estimate", "qualitative", ""}
+
 COMPOUND_MIN = 2  # at least one two-character surname must exist, else the extractor broke
 
 
 def fetch(url: str, binary: bool = False):
-    req = urllib.request.Request(url, headers={"User-Agent": "chinese-surnames-dataset-sync/2.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "chinese-surnames-dataset-sync/2.1"})
     with urllib.request.urlopen(req, timeout=60) as r:
         raw = r.read()
     return raw if binary else raw.decode("utf-8")
@@ -86,6 +89,31 @@ def validate(rows) -> None:
         if rec["rank_num"] is not None and not rec["rank"]:
             fail(f"{where}: rank_num is set but rank is empty")
 
+        # v2.1: every population figure must say where it came from, and the
+        # source must agree with the shape of the data it describes.
+        src = rec["population_source"]
+        if src not in SOURCES:
+            fail(f"{where}: population_source must be one of {sorted(SOURCES)}, got {src!r}")
+        if src == "mps2020":
+            if rec["population_est"] is None:
+                fail(f"{where}: mps2020 must carry a population_est")
+            if rec["rank_num"] is not None:
+                fail(
+                    f"{where}: a ranked surname cannot be mps2020 — the 2020 report's "
+                    "top-100 table lists ranks only, no headcounts"
+                )
+        elif src == "estimate":
+            if rec["population_est"] is None:
+                fail(f"{where}: estimate must carry a population_est")
+        elif src == "qualitative":
+            if rec["population_est"] is not None:
+                fail(f"{where}: qualitative must not carry a number")
+            if rec["population"] != "人数稀少":
+                fail(f"{where}: qualitative implies population == '人数稀少', got {rec['population']!r}")
+        elif src == "":
+            if rec["population_est"] is not None or rec["population"]:
+                fail(f"{where}: empty source but a population value is present")
+
     ranks = [r["rank_num"] for r in rows if r["rank_num"] is not None]
     if len(ranks) != len(set(ranks)):
         fail("duplicate rank_num values — the ranking is meant to be a permutation")
@@ -116,7 +144,30 @@ def main() -> None:
     ranked = sum(1 for r in rows if r["rank_num"] is not None)
     with_pop = sum(1 for r in rows if r["population_est"] is not None)
     rare = sum(1 for r in rows if r["population"] == "人数稀少")
-    print(f"OK {len(rows)} records · {ranked} with a 2020 rank · {with_pop} with a population figure · {rare} marked rare")
+    by_src = {s: sum(1 for r in rows if r["population_source"] == s) for s in ("mps2020", "estimate", "qualitative", "")}
+    print(
+        f"OK {len(rows)} records · {ranked} with a 2020 rank · {with_pop} with a population figure · {rare} marked rare"
+    )
+    print(
+        "   provenance: "
+        f"{by_src['mps2020']} mps2020 · {by_src['estimate']} estimate · "
+        f"{by_src['qualitative']} qualitative · {by_src['']} none"
+    )
+
+    # The two population columns are not from the same survey, so ordering by
+    # population_est disagrees with the official rank in a few adjacent pairs.
+    # Surface them rather than letting a reader discover it by accident.
+    ordered = sorted((r for r in rows if r["rank_num"] is not None and r["population_est"]), key=lambda r: r["rank_num"])
+    inversions = [
+        (a, b)
+        for a, b in zip(ordered, ordered[1:])
+        if b["population_est"] > a["population_est"]
+    ]
+    if inversions:
+        pairs = ", ".join(f"{b['surname']}#{b['rank_num']} > {a['surname']}#{a['rank_num']}" for a, b in inversions)
+        print(f"   note: {len(inversions)} adjacent inversion(s) when sorting by population_est — {pairs}")
+        print("   sort on rank_num; use population_est for magnitude only")
+
     print(f"wrote {DATA / 'surnames.json'} and {DATA / 'surnames.csv'}")
 
 

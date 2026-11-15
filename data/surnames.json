@@ -24,6 +24,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "白起",
    "白居易",
@@ -53,6 +54,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "蔡伦",
    "蔡邕",
@@ -84,6 +86,7 @@
   "rank_num": 30,
   "population": "约 790 万人",
   "population_est": 7900000,
+  "population_source": "estimate",
   "notables": [
    "曹刿",
    "曹操",
@@ -113,6 +116,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [],
   "origin_note": "匈奴。匈奴最高首领称「单于」，其后有以王号为氏者。",
   "url": "https://naming-cn.pages.dev/xing/chanyu2"
@@ -147,6 +151,7 @@
   "rank_num": 5,
   "population": "约 6300 万人",
   "population_est": 63000000,
+  "population_source": "estimate",
   "notables": [
    "陈胜",
    "陈寿",
@@ -183,6 +188,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "程婴",
    "程知节（程咬金）",
@@ -213,6 +219,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "淳于髡",
    "淳于意（仓公）"
@@ -241,6 +248,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "崔杼",
    "崔颢",
@@ -275,6 +283,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "戴德",
    "戴圣",
@@ -306,6 +315,7 @@
   "rank_num": 28,
   "population": "约 920 万人",
   "population_est": 9200000,
+  "population_source": "estimate",
   "notables": [
    "邓禹",
    "邓艾",
@@ -336,6 +346,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "丁奉",
    "丁谓",
@@ -369,6 +380,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "董狐",
    "董仲舒",
@@ -397,6 +409,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "东方朔",
    "东方虬"
@@ -430,6 +443,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "杜预",
    "杜甫",
@@ -459,6 +473,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "端木赐（子贡）"
   ],
@@ -486,6 +501,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "独孤信",
    "独孤伽罗（隋文帝皇后）"
@@ -515,6 +531,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "范蠡",
    "范雎",
@@ -549,6 +566,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "方腊",
    "方孝孺",
@@ -583,6 +601,7 @@
   "rank_num": 29,
   "population": "约 950 万人",
   "population_est": 9500000,
+  "population_source": "estimate",
   "notables": [
    "冯唐",
    "冯道",
@@ -614,6 +633,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "傅说",
    "傅玄",
@@ -645,6 +665,7 @@
   "rank_num": 20,
   "population": "约 1450 万人",
   "population_est": 14500000,
+  "population_source": "estimate",
   "notables": [
    "高傒",
    "高适",
@@ -674,6 +695,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "公孙鞅（商鞅）",
    "公孙龙",
@@ -702,6 +724,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "公西赤（子华）"
   ],
@@ -734,6 +757,7 @@
   "rank_num": 16,
   "population": "约 1580 万人",
   "population_est": 15800000,
+  "population_source": "estimate",
   "notables": [
    "郭隗",
    "郭子仪",
@@ -768,6 +792,7 @@
   "rank_num": 27,
   "population": "约 980 万人",
   "population_est": 9800000,
+  "population_source": "estimate",
   "notables": [
    "韩非",
    "韩信",
@@ -798,6 +823,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "郝隆",
    "郝经"
@@ -831,6 +857,7 @@
   "rank_num": 17,
   "population": "约 1300 万人",
   "population_est": 13000000,
+  "population_source": "estimate",
   "notables": [
    "何休",
    "何承天",
@@ -860,6 +887,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "赫连勃勃"
   ],
@@ -891,6 +919,7 @@
   "rank_num": 15,
   "population": "约 1650 万人",
   "population_est": 16500000,
+  "population_source": "estimate",
   "notables": [
    "胡瑗",
    "胡安国",
@@ -925,6 +954,7 @@
   "rank_num": 7,
   "population": "约 3300 万人",
   "population_est": 33000000,
+  "population_source": "estimate",
   "notables": [
    "黄歇",
    "黄香",
@@ -956,6 +986,7 @@
   "rank_num": null,
   "population": "约 6.4 万人",
   "population_est": 64000,
+  "population_source": "mps2020",
   "notables": [
    "皇甫规",
    "皇甫嵩",
@@ -990,6 +1021,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "贾谊",
    "贾思勰",
@@ -1023,6 +1055,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "江统",
    "江淹",
@@ -1052,6 +1085,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "姜子牙（吕尚）",
    "姜维",
@@ -1081,6 +1115,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "蒋琬",
    "蒋士铨"
@@ -1109,6 +1144,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "金日磾",
    "金圣叹",
@@ -1139,6 +1175,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "康有为",
    "康广仁"
@@ -1175,6 +1212,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "孔子",
    "孔融",
@@ -1208,6 +1246,7 @@
   "rank_num": 2,
   "population": "约 1.01 亿人",
   "population_est": 101000000,
+  "population_source": "estimate",
   "notables": [
    "李耳（老子）",
    "李广",
@@ -1240,6 +1279,7 @@
   "rank_num": 22,
   "population": "约 1130 万人",
   "population_est": 11300000,
+  "population_source": "estimate",
   "notables": [
    "梁鸿",
    "梁启超",
@@ -1270,6 +1310,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "廖化",
    "廖刚"
@@ -1307,6 +1348,7 @@
   "rank_num": 18,
   "population": "约 1420 万人",
   "population_est": 14200000,
+  "population_source": "estimate",
   "notables": [
    "林则徐",
    "林逋",
@@ -1335,6 +1377,7 @@
   "rank_num": null,
   "population": "约 5.5 万人",
   "population_est": 55000,
+  "population_source": "mps2020",
   "notables": [
    "令狐德棻",
    "令狐楚",
@@ -1369,6 +1412,7 @@
   "rank_num": 4,
   "population": "约 7200 万人",
   "population_est": 72000000,
+  "population_source": "estimate",
   "notables": [
    "刘邦",
    "刘彻",
@@ -1400,6 +1444,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "卢绾",
    "卢植",
@@ -1434,6 +1479,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "陆贾",
    "陆逊",
@@ -1464,6 +1510,7 @@
   "rank_num": 19,
   "population": "约 1400 万人",
   "population_est": 14000000,
+  "population_source": "estimate",
   "notables": [
    "罗贯中",
    "罗隐",
@@ -1498,6 +1545,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "吕尚（姜子牙）",
    "吕不韦",
@@ -1532,6 +1580,7 @@
   "rank_num": 13,
   "population": "约 1910 万人",
   "population_est": 19100000,
+  "population_source": "estimate",
   "notables": [
    "马援",
    "马融",
@@ -1563,6 +1612,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "毛遂",
    "毛亨",
@@ -1592,6 +1642,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "万俟卨"
   ],
@@ -1620,6 +1671,7 @@
   "rank_num": null,
   "population": "约 0.5 万人",
   "population_est": 5000,
+  "population_source": "mps2020",
   "notables": [
    "慕容皝",
    "慕容垂",
@@ -1648,6 +1700,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "南宫适（南宫括）"
   ],
@@ -1679,6 +1732,7 @@
   "rank_num": null,
   "population": "111.2 万人",
   "population_est": 1112000,
+  "population_source": "mps2020",
   "notables": [
    "欧阳询",
    "欧阳詹",
@@ -1709,6 +1763,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "潘岳",
    "潘美",
@@ -1739,6 +1794,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "彭祖",
    "彭越",
@@ -1767,6 +1823,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "濮阳兴"
   ],
@@ -1794,6 +1851,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "秦琼",
    "秦观",
@@ -1823,6 +1881,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "邱处机（丘处机）",
    "邱濬"
@@ -1852,6 +1911,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "任嚣",
    "任昉",
@@ -1880,6 +1940,7 @@
   "rank_num": null,
   "population": "约 8.8 万人",
   "population_est": 88000,
+  "population_source": "mps2020",
   "notables": [
    "上官仪",
    "上官婉儿"
@@ -1912,6 +1973,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "沈约",
    "沈括",
@@ -1942,6 +2004,7 @@
   "rank_num": null,
   "population": "约 1.9 万人",
   "population_est": 19000,
+  "population_source": "mps2020",
   "notables": [
    "申屠嘉",
    "申屠蟠"
@@ -1970,6 +2033,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "石碏",
    "石勒",
@@ -2000,6 +2064,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "史佚",
    "史鱼",
@@ -2032,6 +2097,7 @@
   "rank_num": null,
   "population": "约 2.3 万人",
   "population_est": 23000,
+  "population_source": "mps2020",
   "notables": [
    "司马迁",
    "司马相如",
@@ -2063,6 +2129,7 @@
   "rank_num": 24,
   "population": "约 1120 万人",
   "population_est": 11200000,
+  "population_source": "estimate",
   "notables": [
    "宋玉",
    "宋弘",
@@ -2098,6 +2165,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "苏秦",
    "苏武",
@@ -2133,6 +2201,7 @@
   "rank_num": 12,
   "population": "约 1940 万人",
   "population_est": 19400000,
+  "population_source": "estimate",
   "notables": [
    "孙武",
    "孙膑",
@@ -2163,6 +2232,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "太史儋",
    "太史慈"
@@ -2192,6 +2262,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "谭嗣同",
    "谭纶"
@@ -2221,6 +2292,7 @@
   "rank_num": 25,
   "population": "约 1010 万人",
   "population_est": 10100000,
+  "population_source": "estimate",
   "notables": [
    "唐寅",
    "唐慎微",
@@ -2249,6 +2321,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "澹台灭明（子羽）"
   ],
@@ -2281,6 +2354,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "田单",
    "田忌",
@@ -2310,6 +2384,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "拓跋珪（道武帝）",
    "拓跋宏（孝文帝）"
@@ -2338,6 +2413,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "汪伦",
    "汪藻",
@@ -2371,6 +2447,7 @@
   "rank_num": 1,
   "population": "约 1.05 亿人",
   "population_est": 105000000,
+  "population_source": "estimate",
   "notables": [
    "王翦",
    "王昭君",
@@ -2401,6 +2478,7 @@
   "rank_num": null,
   "population": "约 0.6 万人",
   "population_est": 6000,
+  "population_source": "mps2020",
   "notables": [
    "完颜阿骨打",
    "完颜宗弼（金兀术）"
@@ -2433,6 +2511,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "魏无忌（信陵君）",
    "魏征",
@@ -2461,6 +2540,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "闻人通汉"
   ],
@@ -2497,6 +2577,7 @@
   "rank_num": 9,
   "population": "约 2780 万人",
   "population_est": 27800000,
+  "population_source": "estimate",
   "notables": [
    "吴起",
    "吴广",
@@ -2528,6 +2609,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "夏育",
    "夏竦",
@@ -2557,6 +2639,7 @@
   "rank_num": null,
   "population": "约 1.1 万人",
   "population_est": 11000,
+  "population_source": "mps2020",
   "notables": [
    "夏侯婴",
    "夏侯惇",
@@ -2591,6 +2674,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "萧何",
    "萧道成",
@@ -2630,6 +2714,7 @@
   "rank_num": 23,
   "population": "约 1050 万人",
   "population_est": 10500000,
+  "population_source": "estimate",
   "notables": [
    "谢安",
    "谢玄",
@@ -2660,6 +2745,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "熊绎",
    "熊廷弼"
@@ -2689,6 +2775,7 @@
   "rank_num": 11,
   "population": "约 2020 万人",
   "population_est": 20200000,
+  "population_source": "estimate",
   "notables": [
    "徐福",
    "徐庶",
@@ -2724,6 +2811,7 @@
   "rank_num": 26,
   "population": "约 900 万人",
   "population_est": 9000000,
+  "population_source": "estimate",
   "notables": [
    "许行",
    "许慎",
@@ -2752,6 +2840,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "黄帝（轩辕氏）"
   ],
@@ -2784,6 +2873,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "薛仁贵",
    "薛涛",
@@ -2814,6 +2904,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "阎立本",
    "阎若璩"
@@ -2846,6 +2937,7 @@
   "rank_num": 6,
   "population": "约 4600 万人",
   "population_est": 46000000,
+  "population_source": "estimate",
   "notables": [
    "杨震",
    "杨坚",
@@ -2877,6 +2969,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "姚崇",
    "姚广孝",
@@ -2910,6 +3003,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "于谦",
    "于成龙",
@@ -2944,6 +3038,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "由余",
    "余靖",
@@ -2978,6 +3073,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "袁安",
    "袁绍",
@@ -3007,6 +3103,7 @@
   "rank_num": null,
   "population": "约 0.4 万人",
   "population_est": 4000,
+  "population_source": "mps2020",
   "notables": [
    "尉迟恭（尉迟敬德）"
   ],
@@ -3034,6 +3131,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "宇文泰",
    "宇文邕（北周武帝）",
@@ -3072,6 +3170,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "曾参（曾子）",
    "曾巩",
@@ -3109,6 +3208,7 @@
   "rank_num": 3,
   "population": "约 8500 万人",
   "population_est": 85000000,
+  "population_source": "estimate",
   "notables": [
    "张仪",
    "张良",
@@ -3140,6 +3240,7 @@
   "rank_num": null,
   "population": "约 0.3 万人",
   "population_est": 3000,
+  "population_source": "mps2020",
   "notables": [
    "长孙无忌",
    "长孙皇后"
@@ -3173,6 +3274,7 @@
   "rank_num": 8,
   "population": "约 2860 万人",
   "population_est": 28600000,
+  "population_source": "estimate",
   "notables": [
    "赵武灵王",
    "赵奢",
@@ -3208,6 +3310,7 @@
   "rank_num": 21,
   "population": "约 1240 万人",
   "population_est": 12400000,
+  "population_source": "estimate",
   "notables": [
    "郑国",
    "郑玄",
@@ -3243,6 +3346,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "钟子期",
    "钟繇",
@@ -3281,6 +3385,7 @@
   "rank_num": 10,
   "population": "约 2680 万人",
   "population_est": 26800000,
+  "population_source": "estimate",
   "notables": [
    "周勃",
    "周瑜",
@@ -3321,6 +3426,7 @@
   "rank_num": 14,
   "population": "约 1810 万人",
   "population_est": 18100000,
+  "population_source": "estimate",
   "notables": [
    "朱熹",
    "朱元璋",
@@ -3354,6 +3460,7 @@
   "rank_num": null,
   "population": "约 4.8 万人",
   "population_est": 48000,
+  "population_source": "mps2020",
   "notables": [
    "诸葛亮",
    "诸葛瑾",
@@ -3382,6 +3489,7 @@
   "rank_num": null,
   "population": "人数稀少",
   "population_est": null,
+  "population_source": "qualitative",
   "notables": [
    "宗政德（刘德）"
   ],
@@ -3409,6 +3517,7 @@
   "rank_num": null,
   "population": "",
   "population_est": null,
+  "population_source": "",
   "notables": [
    "邹忌",
    "邹衍",
