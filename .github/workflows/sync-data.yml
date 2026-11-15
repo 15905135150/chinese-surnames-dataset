@@ -30,10 +30,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data)" ]; then
-            git add data
-            git commit -m "chore: sync dataset from naming-cn.pages.dev"
-            git push
-          else
+          # Stage first, then ask git whether the index actually differs. Comparing
+          # index to HEAD instead of using `git status` keeps this from tripping on
+          # line-ending normalisation (the canonical CSV ships CRLF, this repo is LF).
+          git add -A data
+          if git diff --cached --quiet; then
             echo "Dataset unchanged upstream; nothing to commit."
+            git status --porcelain data
+            exit 0
           fi
+          git diff --cached --stat
+          git commit -m "chore: sync dataset from naming-cn.pages.dev"
+          git push
