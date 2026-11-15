@@ -170,6 +170,11 @@ BibTeX:
 
 Genuinely welcome, especially from anyone who knows the genealogy literature better than this dataset does. Open an issue here or use the site's [message board](https://naming-cn.pages.dev/board). Verified fixes ship as a new version number.
 
+## Write-ups
+
+- [I published 109 Chinese surnames as open data — here are the awkward parts](https://dev.to/liuxj0416/i-published-109-chinese-surnames-as-open-data-here-are-the-awkward-parts-2976) — why compound surnames stay whole, why empty means unknown, why the BOM is deliberate.
+- [My open dataset credited the wrong source for 30 numbers](https://dev.to/liuxj0416/my-open-dataset-credited-the-wrong-source-for-30-numbers-a-sort-order-gave-it-away-3kn9) — the v2.1 provenance fix, found by a monotonicity check on `population_est`.
+
 ## 中文摘要
 
 本站把 109 个姓氏详情页里的结构化信息抽成机器可读的数据集：拼音、得姓时代、得姓始祖、发源地、郡望、堂号、2020 年全国人口排名与人口估算、史籍所见名人、得姓源流说明，以及站内详情页地址。
