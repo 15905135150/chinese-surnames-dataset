@@ -1,5 +1,7 @@
 name: Sync dataset
 
+# Push to this file also re-runs the sync, which is how a domain/DNS migration
+# is verified end-to-end (the canonical source is liuxxiaojun.cn).
 on:
   workflow_dispatch:
   schedule:
