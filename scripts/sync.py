@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Mirror the canonical Chinese Surnames dataset into data/ and validate it.
 
-Canonical source: https://naming-cn.pages.dev/data/
+Canonical source: https://liuxxiaojun.cn/data/
 Licence: CC BY 4.0 — attribution plus a licence link is the only condition.
 
 Run locally:   python scripts/sync.py
@@ -16,7 +16,7 @@ import pathlib
 import sys
 import urllib.request
 
-BASE = "https://naming-cn.pages.dev"
+BASE = "https://liuxxiaojun.cn"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 

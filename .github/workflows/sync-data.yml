@@ -40,5 +40,5 @@ jobs:
             exit 0
           fi
           git diff --cached --stat
-          git commit -m "chore: sync dataset from naming-cn.pages.dev"
+          git commit -m "chore: sync dataset from liuxxiaojun.cn"
           git push

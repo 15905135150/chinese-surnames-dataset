@@ -6,10 +6,10 @@
 
 | | |
 |---|---|
-| JSON | <https://naming-cn.pages.dev/data/surnames.json> (87 KB) |
-| CSV  | <https://naming-cn.pages.dev/data/surnames.csv> (19 KB, UTF-8 with BOM) |
-| Docs (English) | <https://naming-cn.pages.dev/en/chinese-surnames-dataset> |
-| Docs (中文) | <https://naming-cn.pages.dev/opendata> |
+| JSON | <https://liuxxiaojun.cn/data/surnames.json> (87 KB) |
+| CSV  | <https://liuxxiaojun.cn/data/surnames.csv> (19 KB, UTF-8 with BOM) |
+| Docs (English) | <https://liuxxiaojun.cn/en/chinese-surnames-dataset> |
+| Docs (中文) | <https://liuxxiaojun.cn/opendata> |
 | Version | 2.1 (2026-11-15) |
 
 Both files are served with `Access-Control-Allow-Origin: *`, so a plain browser `fetch` works — no key, no signup, no proxy.
@@ -21,7 +21,7 @@ Both files are served with `Access-Control-Allow-Origin: *`, so a plain browser 
 Shell:
 
 ```bash
-curl -s https://naming-cn.pages.dev/data/surnames.json \
+curl -s https://liuxxiaojun.cn/data/surnames.json \
   | jq -r 'sort_by(.rank_num // 999) | .[] | select(.rank_num) | "\(.rank_num)\t\(.surname)\t\(.pinyin)"'
 ```
 
@@ -30,7 +30,7 @@ Python:
 ```python
 import pandas as pd
 
-df = pd.read_csv("https://naming-cn.pages.dev/data/surnames.csv")
+df = pd.read_csv("https://liuxxiaojun.cn/data/surnames.csv")
 ranked = df.dropna(subset=["rank_num"]).sort_values("rank_num")   # 30 rows
 populated = df.dropna(subset=["population_est"])                  # 42 rows
 official = df[df["population_source"] == "mps2020"]               # 12 rows, verbatim from the report
@@ -41,7 +41,7 @@ Two columns describe population and they are **not** from the same survey. Sort 
 JavaScript:
 
 ```js
-const rows = await fetch("https://naming-cn.pages.dev/data/surnames.json")
+const rows = await fetch("https://liuxxiaojun.cn/data/surnames.json")
   .then(r => r.json());
 
 const byRank = rows.filter(r => r.rank_num)
@@ -72,7 +72,7 @@ const liPrefix = rows.filter(r => /^li/.test(r.slug)); // li3, liang2, liao4, li
   "population_source": "estimate",
   "notables": ["李耳（老子）", "李广", "李世民", "李白", "李时珍"],
   "origin_note": "嬴姓。舜时皋陶任大理（掌刑狱），子孙以官为氏称「理」。……遂改「理」为「李」。",
-  "url": "https://naming-cn.pages.dev/xing/li3"
+  "url": "https://liuxxiaojun.cn/xing/li3"
 }
 ```
 
@@ -145,13 +145,13 @@ data/surnames.csv    mirrored copy (see note below)
 .github/workflows/   weekly sync job
 ```
 
-The **canonical** files live on the site. `data/` here is a convenience mirror refreshed by the sync workflow, so it can lag by up to a week. If you need the current release, fetch from `naming-cn.pages.dev`; if you want a stable copy to diff against, use this repo.
+The **canonical** files live on the site. `data/` here is a convenience mirror refreshed by the sync workflow, so it can lag by up to a week. If you need the current release, fetch from `liuxxiaojun.cn`; if you want a stable copy to diff against, use this repo.
 
 ## Citation
 
 ```
 Chinese Naming (2026). Chinese Surnames Open Dataset, v2.1.
-https://naming-cn.pages.dev/en/chinese-surnames-dataset (CC BY 4.0)
+https://liuxxiaojun.cn/en/chinese-surnames-dataset (CC BY 4.0)
 ```
 
 BibTeX:
@@ -162,13 +162,13 @@ BibTeX:
   author = {{Chinese Naming}},
   year   = {2026},
   note   = {109 records, CC BY 4.0},
-  url    = {https://naming-cn.pages.dev/en/chinese-surnames-dataset}
+  url    = {https://liuxxiaojun.cn/en/chinese-surnames-dataset}
 }
 ```
 
 ## Corrections
 
-Genuinely welcome, especially from anyone who knows the genealogy literature better than this dataset does. Open an issue here or use the site's [message board](https://naming-cn.pages.dev/board). Verified fixes ship as a new version number.
+Genuinely welcome, especially from anyone who knows the genealogy literature better than this dataset does. Open an issue here or use the site's [message board](https://liuxxiaojun.cn/board). Verified fixes ship as a new version number.
 
 ## Write-ups
 
@@ -179,8 +179,8 @@ Genuinely welcome, especially from anyone who knows the genealogy literature bet
 
 本站把 109 个姓氏详情页里的结构化信息抽成机器可读的数据集：拼音、得姓时代、得姓始祖、发源地、郡望、堂号、2020 年全国人口排名与人口估算、史籍所见名人、得姓源流说明，以及站内详情页地址。
 
-- 数据文件：<https://naming-cn.pages.dev/data/surnames.json> 与 `surnames.csv`（UTF-8 带 BOM，Excel 直开不乱码）
-- 说明页：<https://naming-cn.pages.dev/opendata>
+- 数据文件：<https://liuxxiaojun.cn/data/surnames.json> 与 `surnames.csv`（UTF-8 带 BOM，Excel 直开不乱码）
+- 说明页：<https://liuxxiaojun.cn/opendata>
 - 授权：**CC BY 4.0**，可商用、可修改、可再分发，署名并附许可链接即可
 - **空值表示「未知」，不是 0**：只有 30 个姓有官方全国排名；2020 年公安部报告的「百家姓」表只排前 100、表内不列人数，另在「常见复姓」一节给出 12 个复姓的具体人数。18 个标为「人数稀少」，49 个空缺
 - **人口数字分两种口径，别混用**：`population_source` 标明来源——`mps2020`（报告原文数字，仅 12 个复姓）、`estimate`（其他统计或估算，年份不一，30 个有排名的单姓）、`qualitative`（只有「人数稀少」定性）、空（无数据）。按 `population_est` 排序会出现 5 处相邻倒挂（林#18>何#17、高#20>罗#19、宋#24>谢#23、韩#27>许#26、冯#29>邓#28），排序请用 `rank_num`
